@@ -6,12 +6,9 @@
   box-sizing: border-box;
 }
 
-body {
-  background-image: red;
-  background-color: #ffffff;
-}
-
 .navcontainer {
+  /*background-color: rgba(0, 0, 0, 0.178);*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.918), rgba(10, 10, 10, 0));
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,12 +83,16 @@ body {
 .blackbox {
   position: absolute;
   background-color: rgb(32, 32, 32);
-  color: gray;
+  color: rgb(240, 240, 240);
   width: calc(70vh/2);
   height: calc(55vh/2);
   padding: 3rem 3rem;
   bottom: 220px;
   right: 35px;
+}
+
+.blackbox h1 {
+  color:rgb(187, 31, 31);
 }
 
 .blackbox p {
@@ -101,12 +102,16 @@ body {
 .beigebox {
   position: absolute;
   background-color: rgb(238, 227, 220);
-  color: gray;
+  color: rgb(46, 46, 46);
   width: calc(70vh/2);
   height: calc(55vh/2);
   padding: 3rem 3rem;
   bottom: 20px;
   right: 20rem;
+}
+
+.beigebox h1 {
+  color:rgb(187, 31, 31);
 }
 
 .beigebox p {
@@ -120,11 +125,11 @@ body {
 }
 
 .btn.light {
-  border: 2px solid rgb(238, 227, 220);
-  color: gray;
+  border: 2px solid rgb(240, 240, 240);;
+  color: rgb(240, 240, 240);
 }
 
 .btn.dark {
   border: 2px solid rgb(58, 58, 58);
-  color: gray;
+  color: rgb(46, 46, 46);
 }
