@@ -15,17 +15,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  z-index: 1;
+  position: fixed;
+  padding: 1rem 4rem;
 }
 
 .socials i {
   margin: 0 10px;
-  color: red;
+  color: white;
 }
 
 .logo {
-  width: 150px;
+  width: 200px;
 }
 
 .logo img {
@@ -48,27 +51,66 @@ body {
   text-decoration: none;
 }
 
-.main {
+.hero {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(../src/assets/bg.png);
   background-size: cover;
   height: 100vh;
 }
 
-.hero {
-  font-family: 'Roboto', sans-serif;
+.heroitems {
+  position: relative;
+  width: 70%; 
+  height: 100%;
+  margin: 0 auto;
+}
+
+.herotext.red{
+  position: absolute;
+  top: 30vh;
+  color: rgb(187, 31, 31);
+  font-size: 5rem;
+}
+
+.herotext.white{
+  position: absolute;
+  top: 36vh;
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+}
+
+.herotext.red.bottom {
+  top: 50vh;
 }
 
 .blackbox {
-  background-color: rgb(58, 58, 58);
+  position: absolute;
+  background-color: rgb(32, 32, 32);
   color: gray;
-  width: 15vw;
-  height: 20vh;
+  width: calc(70vh/2);
+  height: calc(55vh/2);
+  padding: 3rem 3rem;
+  bottom: 220px;
+  right: 35px;
+}
+
+.blackbox p {
+  font-size: 12px;
 }
 
 .beigebox {
+  position: absolute;
   background-color: rgb(238, 227, 220);
   color: gray;
-  width: 15vw;
-  height: 20vh;
+  width: calc(70vh/2);
+  height: calc(55vh/2);
+  padding: 3rem 3rem;
+  bottom: 20px;
+  right: 20rem;
+}
+
+.beigebox p {
+  font-size: 12px;
 }
 
 .btn {
