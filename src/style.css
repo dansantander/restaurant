@@ -8,7 +8,7 @@
 
 .navcontainer {
   /*background-color: rgba(0, 0, 0, 0.178);*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.918), rgba(10, 10, 10, 0));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(10, 10, 10, 0));
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +22,9 @@
 .socials i {
   margin: 0 10px;
   color: white;
+  padding: 0 5px;
 }
+
 
 .logo {
   width: 200px;
@@ -37,7 +39,7 @@
   align-items: center;
   list-style-type: none;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .menu-item {
@@ -46,6 +48,9 @@
 
 .menu-item a {
   text-decoration: none;
+  color: white;
+  /*border-bottom: 4px solid rgb(187, 31, 31);*/
+  padding: 0 5px;
 }
 
 .hero {
@@ -65,15 +70,19 @@
 .herotext.red{
   position: absolute;
   top: 30vh;
-  color: rgb(187, 31, 31);
-  font-size: 5rem;
+  left: 0;
+  color: rgb(204, 17, 17);
+  font-size: calc(100vh/8);
+  line-height: calc(100vh/10);
 }
 
 .herotext.white{
   position: absolute;
-  top: 36vh;
-  color: rgb(255, 255, 255);
-  font-size: 5rem;
+  top: 50vh;
+  left: 30vh;
+  color:rgb(238, 227, 220);
+  font-size: calc(100vh/12);
+  line-height: calc(100vh/12);
 }
 
 .herotext.red.bottom {
@@ -88,15 +97,18 @@
   height: calc(55vh/2);
   padding: 3rem 3rem;
   bottom: 220px;
-  right: 35px;
+  right: 0;
+  box-shadow: 2px 2px 20px 2px black;
 }
 
 .blackbox h1 {
   color:rgb(187, 31, 31);
+  margin-bottom: 20px;
 }
 
 .blackbox p {
   font-size: 12px;
+  margin-bottom: 20px;
 }
 
 .beigebox {
@@ -108,14 +120,17 @@
   padding: 3rem 3rem;
   bottom: 20px;
   right: 20rem;
+  box-shadow: 2px 2px 20px 2px black;
 }
 
 .beigebox h1 {
   color:rgb(187, 31, 31);
+  margin-bottom: 20px;
 }
 
 .beigebox p {
   font-size: 12px;
+  margin-bottom: 20px;
 }
 
 .btn {
