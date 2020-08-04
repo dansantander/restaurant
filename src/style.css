@@ -72,8 +72,8 @@
   top: 30vh;
   left: 0;
   color: rgb(204, 17, 17);
-  font-size: calc(100vh/8);
-  line-height: calc(100vh/10);
+  font-size: calc(100vh/10);
+  line-height: calc(100vh/12);
 }
 
 .herotext.white{
