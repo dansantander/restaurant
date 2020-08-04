@@ -150,7 +150,7 @@
   color: rgb(46, 46, 46);
 }
 
-/*++ CONTACT PAGE ++*/
+/*++ RESERVATIONS PAGE ++*/
 
 .contact {
   display: flex;
@@ -158,10 +158,19 @@
 
 .left-contact {
   width: 40%;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
+  color: #ffffff;
 }
+
+.left-title {
+  color:rgb(187, 31, 31);
+}
+
+
+
+
 
 .form-contact {
   width: 60%;
@@ -200,7 +209,7 @@
 }
 
 .form-text input {
-  height: 350px;
+  height: 100px;
 }
 
 .contact button {

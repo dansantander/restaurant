@@ -69,7 +69,7 @@ const renderNav = () => {
   li2.appendChild(a5);
 
   const a6 = document.createElement('a');
-  a6.textContent = 'CONTACT';
+  a6.textContent = 'RESERVATIONS';
   li3.appendChild(a6);
 
   const clean = () => {
