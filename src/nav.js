@@ -1,16 +1,12 @@
 import logo2 from './assets/logo2.png';
+import renderHome from './home';
+import renderMenu from './menu';
+import renderContact from './contact';
 
-const renderNav = (homelink, menulink, contactlink) => {
+const renderNav = () => {
+  const nav = document.querySelector('#navbar');
   const main = document.querySelector('#main');
 
-  const content = document.createElement('div');
-  content.classList.add('content');
-  main.appendChild(content);
-
-  const nav = document.createElement('nav');
-  nav.classList.add('navbar');
-  content.appendChild(nav);
-  
   const navContainer = document.createElement('div');
   navContainer.classList.add('navcontainer');
   nav.appendChild(navContainer);
@@ -76,19 +72,23 @@ const renderNav = (homelink, menulink, contactlink) => {
   a6.textContent = 'CONTACT';
   li3.appendChild(a6);
 
+  const clean = () => {
+    main.innerHTML = ''
+  };
+
   a4.addEventListener('click', () => {
-    //clean();
-    menulink(homelink);
+    clean();
+    renderHome();
   });
 
   a5.addEventListener('click', () => {
-    //clean();
-    menulink(menulink);
+    clean();
+    renderMenu();
   });
 
   a6.addEventListener('click', () => {
-    //clean();
-    contactlink(contactlink);
+    clean();
+    renderContact();
   });
 }
 
