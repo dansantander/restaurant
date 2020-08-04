@@ -39,7 +39,7 @@
   align-items: center;
   list-style-type: none;
   font-family: 'Roboto', sans-serif;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .menu-item {
@@ -79,7 +79,7 @@
 .herotext.white{
   position: absolute;
   top: 50vh;
-  left: 30vh;
+  left: 0;
   color:rgb(238, 227, 220);
   font-size: calc(100vh/12);
   line-height: calc(100vh/12);
@@ -90,6 +90,7 @@
 }
 
 .blackbox {
+  word-wrap: break-word;
   position: absolute;
   background-color: rgb(32, 32, 32);
   color: rgb(240, 240, 240);
