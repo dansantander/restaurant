@@ -7,12 +7,28 @@ const renderContact = () => {
   main.appendChild(hero);
 
   const contact = document.createElement('div');
-  const leftContact = document.createElement('div');
-  const formContact = document.createElement('div');
-
   hero.appendChild(contact);
+
+  const leftContact = document.createElement('div');
   contact.appendChild(leftContact);
+
+
+  let map;
+
+  function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat: -34.397, lng: 150.644 },
+      zoom: 8
+    });
+  }
+
+
+  const formContact = document.createElement('div');
   contact.appendChild(formContact);
+
+  contact.classList = 'contact';
+  leftContact.classList = 'left-contact';
+  formContact.classList = 'form-contact';
 
   const imgForm = document.createElement('img');
   const h2Form = document.createElement('h2');
@@ -32,6 +48,15 @@ const renderContact = () => {
   formEmail.classList = 'form-email';
   formText.classList = 'form-text';
 
+  h2Form.textContent = 'Reach out here!';
+  buttonForm.textContent = 'Send Now';
+
+  formName.innerHTML = `<span>Name: </span>
+          <input type="text">`;
+  formEmail.innerHTML = ` <span>E-mail: </span>
+          <input type="text">`;
+  formText.innerHTML = `<span>Message: </span>
+          <input type="text">`;
 
 }
 
