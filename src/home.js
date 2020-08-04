@@ -45,7 +45,6 @@ const renderHome = (homelink, menulink, contactlink) => {
   imgLogo.src = logo2;
   logo.appendChild(imgLogo);
   
-
   const menuContainer = document.createElement('div');
   menuContainer.classList.add('menu-container');
   navContainer.appendChild(menuContainer);
@@ -77,6 +76,28 @@ const renderHome = (homelink, menulink, contactlink) => {
   const a6 = document.createElement('a');
   a6.textContent = 'CONTACT';
   li3.appendChild(a6);
+
+  //*************** POSSIBLE SEPARETED FILE FOR HOME RENDER ***************/
+
+  const hero = document.createElement('div');
+  hero.classList.add('hero');
+  content.appendChild(hero);
+
+  const heroItems = document.createElement('div');
+  heroItems.classList.add('heroitems');
+  hero.appendChild(heroItems);
+
+  const bigText1 = document.createElement('h1');
+  bigText1.classList.add('herotext','red');
+  bigText1.innerHTML = `May you always <br> be surrounded`;
+  heroItems.appendChild(bigText1);
+
+  
+  const bigText2 = document.createElement('h1');
+  bigText2.classList.add('herotext','white');
+  bigText2.innerHTML = `by good friends<br>and great bbq`;
+  heroItems.appendChild(bigText2);
+
 
 }
 
