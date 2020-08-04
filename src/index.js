@@ -1,7 +1,9 @@
 import './style.css';
 
+import renderNav from './nav';
 import renderHome from './home';
 import renderMenu from './menu';
 import renderContact from './contact';
 
-renderHome(renderHome, renderMenu, renderContact);
+renderNav();
+renderHome();

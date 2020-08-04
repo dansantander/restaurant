@@ -1,6 +1,6 @@
-const renderContact = (homelink, menulink, contactlink) => {
+const renderContact = () => {
 
-  
+
 
 }
 

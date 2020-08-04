@@ -1,4 +1,4 @@
-const renderMenu = (homelink, menulink, contactlink) => {
+const renderMenu = () => {
 
   const contact = document.createElement('div');
   const leftContact = document.createElement('div');
