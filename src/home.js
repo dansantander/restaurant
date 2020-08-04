@@ -1,5 +1,4 @@
 import logo2 from './assets/logo2.png';
-import bg from './assets/bg.png';
 
 const renderHome = (homelink, menulink, contactlink) => {
   const main = document.querySelector('#main');
@@ -131,6 +130,16 @@ const renderHome = (homelink, menulink, contactlink) => {
   boxButton2.textContent = 'Make A Reservation';
   boxButton2.classList.add('btn', 'dark');
   beigebox.appendChild(boxButton2);
+
+  a5.addEventListener('click', () => {
+    //clean();
+    menulink(homelink, menulink, contactlink);
+  });
+
+  a6.addEventListener('click', () => {
+    //clean();
+    contactlink(homelink, menulink, contactlink);
+  });
 }
 
 export default (renderHome);
