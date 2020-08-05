@@ -6,9 +6,13 @@ const renderContact = () => {
   hero.classList.add('hero');
   main.appendChild(hero);
 
+  const heroContactItems = document.createElement("div");
+  heroContactItems.classList.add("hero-contact-items");
+  hero.appendChild(heroContactItems);
+
   const contact = document.createElement('div');
   contact.classList = 'contact';
-  hero.appendChild(contact);
+  heroContactItems.appendChild(contact);
 
   const leftContact = document.createElement('div');
   leftContact.classList = 'left-contact';

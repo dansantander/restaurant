@@ -5,13 +5,13 @@ const renderMenu = () => {
   hero.classList.add("hero-menu");
   main.appendChild(hero);
 
-  const heroitems = document.createElement("div");
-  heroitems.classList.add("hero-menu-items");
-  hero.appendChild(heroitems);
+  const heroMenuItems = document.createElement("div");
+  heroMenuItems.classList.add("hero-menu-items");
+  hero.appendChild(heroMenuItems);
 
   const content = document.createElement("div");
   content.classList = "content";
-  heroitems.appendChild(content);
+  heroMenuItems.appendChild(content);
 
   const sectionTitle = document.createElement("h1");
   sectionTitle.textContent = "Browse Our Menu";
