@@ -3,7 +3,7 @@ const renderContact = () => {
   const main = document.querySelector('#main');
 
   const hero = document.createElement('div');
-  hero.classList.add('hero');
+  hero.classList.add('hero', 'reservations');
   main.appendChild(hero);
 
   const heroContactItems = document.createElement("div");
@@ -26,6 +26,7 @@ const renderContact = () => {
 
 
   const loContainer1 = document.createElement('div');
+  loContainer1.classList = "lo-container"
   leftContact.appendChild(loContainer1);
 
   const locTitle1 = document.createElement('h2');
@@ -39,6 +40,7 @@ const renderContact = () => {
 
 
   const loContainer2 = document.createElement('div');
+  loContainer2.classList = "lo-container"
   leftContact.appendChild(loContainer2);
 
   const locTitle2 = document.createElement('h2');
@@ -51,6 +53,7 @@ const renderContact = () => {
 
 
   const loContainer3 = document.createElement('div');
+  loContainer3.classList = "lo-container"
   leftContact.appendChild(loContainer3);
 
   const locTitle3 = document.createElement('h2');
