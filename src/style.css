@@ -25,7 +25,6 @@
   padding: 0 5px;
 }
 
-
 .logo {
   width: 200px;
 }
@@ -152,8 +151,45 @@
 
 /*++ MENU PAGE ++*/
 
+.hero-menu {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(../src/assets/bg.png);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.hero-menu-items {
+  position: relative;
+  width: 70%; 
+  height: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  position: absolute;
+  top: 12rem;
+}
+
+.section-title {
+  color:rgb(187, 31, 31);
+  text-align: center;
+}
+
+.bigbox {
+  margin: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .box {
   color: #ffffff;
+  padding: 2rem 0;
+  width: 80%;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 

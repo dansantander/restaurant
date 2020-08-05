@@ -41,7 +41,7 @@ const renderNav = () => {
   logo.appendChild(imgLogo);
   
   const menuContainer = document.createElement('div');
-  menuContainer.classList.add('menu-container');
+  menuContainer.classList.add('tab-container');
   navContainer.appendChild(menuContainer);
 
   const menu = document.createElement('ul');
