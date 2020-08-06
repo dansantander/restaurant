@@ -23,8 +23,6 @@ const renderContact = () => {
   h1Contact.classList = 'left-title';
   leftContact.appendChild(h1Contact);
 
-
-
   const loContainer1 = document.createElement('div');
   loContainer1.classList = "lo-container"
   leftContact.appendChild(loContainer1);
@@ -36,8 +34,6 @@ const renderContact = () => {
   const locUpperText1 = document.createElement('p');
   locUpperText1.innerHTML = '406 E 9th Street @ 1st Ave<br>New York, NY 10009</a><br>EST. 2010<br>(917) 261 - 2858';
   loContainer1.appendChild(locUpperText1);
-
-
 
   const loContainer2 = document.createElement('div');
   loContainer2.classList = "lo-container"
@@ -51,7 +47,6 @@ const renderContact = () => {
   locUpperText2.innerHTML = '331 10th Avenue<br>New York, NY 10001</a><br>EST. 2017<br>(212) 837 - 1416';
   loContainer2.appendChild(locUpperText2);
 
-
   const loContainer3 = document.createElement('div');
   loContainer3.classList = "lo-container"
   leftContact.appendChild(loContainer3);
@@ -63,10 +58,6 @@ const renderContact = () => {
   const locUpperText3 = document.createElement('p');
   locUpperText3.innerHTML = '261 Hudson St<br>New York, NY 10013</a><br>EST. 2018<br>(646) 669 - 9339';
   loContainer3.appendChild(locUpperText3);
-
-
-
-
 
 //******+++ lEFT SIDE  ++++ */
 

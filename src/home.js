@@ -29,6 +29,11 @@ const renderHome = () => {
   bigText2.innerHTML = `by good friends<br>and great bbq`;
   leftItems.appendChild(bigText2);
 
+  const button = document.createElement('button');
+  button.classList.add('button');
+  button.textContent = 'Order Online';
+  leftItems.appendChild(button);
+
   const rightItems = document.createElement('div');
   rightItems.classList.add('right-items');
   itemsContainer.appendChild(rightItems);
