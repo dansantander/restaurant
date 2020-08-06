@@ -10,36 +10,36 @@ const renderNav = () => {
   const navContainer = document.createElement('div');
   navContainer.classList.add('navcontainer');
   nav.appendChild(navContainer);
-  
+
   const socials = document.createElement('div');
   socials.classList.add('socials');
   navContainer.appendChild(socials);
-  
+
   const a1 = document.createElement('a');
   socials.appendChild(a1);
-  
+
   const a2 = document.createElement('a');
   socials.appendChild(a2);
 
   const a3 = document.createElement('a');
   socials.appendChild(a3);
 
-  a1.innerHTML = `<i class="fab fa-instagram"></i>`;
-  a2.innerHTML = `<i class="fab fa-facebook-f"></i>`;
-  a3.innerHTML = `<i class="fab fa-twitter"></i>`;
+  a1.innerHTML = '<i class="fab fa-instagram"></i>';
+  a2.innerHTML = '<i class="fab fa-facebook-f"></i>';
+  a3.innerHTML = '<i class="fab fa-twitter"></i>';
 
   const logoContainer = document.createElement('div');
   logoContainer.classList.add('logo-container');
   navContainer.appendChild(logoContainer);
-  
+
   const logo = document.createElement('div');
   logo.classList.add('logo');
   logoContainer.appendChild(logo);
-  
+
   const imgLogo = document.createElement('img');
   imgLogo.src = logo2;
   logo.appendChild(imgLogo);
-  
+
   const menuContainer = document.createElement('div');
   menuContainer.classList.add('tab-container');
   navContainer.appendChild(menuContainer);
@@ -47,7 +47,7 @@ const renderNav = () => {
   const menu = document.createElement('ul');
   menu.classList.add('menu');
   menuContainer.appendChild(menu);
-  
+
   const li1 = document.createElement('li');
   li1.classList.add('menu-item');
   menu.appendChild(li1);
@@ -73,7 +73,7 @@ const renderNav = () => {
   li3.appendChild(a6);
 
   const clean = () => {
-    main.innerHTML = ''
+    main.innerHTML = '';
   };
 
   a4.addEventListener('click', () => {
@@ -90,6 +90,6 @@ const renderNav = () => {
     clean();
     renderContact();
   });
-}
+};
 
 export default (renderNav);
