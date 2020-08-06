@@ -20,13 +20,13 @@ const renderHome = () => {
   itemsContainer.appendChild(leftItems);
 
   const bigText1 = document.createElement('h1');
-  bigText1.classList.add('herotext','red');
-  bigText1.innerHTML = `May you always <br> be surrounded`;
+  bigText1.classList.add('herotext', 'red');
+  bigText1.innerHTML = 'May you always <br> be surrounded';
   leftItems.appendChild(bigText1);
 
   const bigText2 = document.createElement('h1');
-  bigText2.classList.add('herotext','white');
-  bigText2.innerHTML = `by good friends<br>and great bbq`;
+  bigText2.classList.add('herotext', 'white');
+  bigText2.innerHTML = 'by good friends<br>and great bbq';
   leftItems.appendChild(bigText2);
 
   const button = document.createElement('button');
@@ -37,7 +37,6 @@ const renderHome = () => {
   const rightItems = document.createElement('div');
   rightItems.classList.add('right-items');
   itemsContainer.appendChild(rightItems);
-  
-}
+};
 
 export default (renderHome);

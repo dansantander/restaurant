@@ -6,8 +6,8 @@ const renderContact = () => {
   hero.classList.add('hero', 'reservations');
   main.appendChild(hero);
 
-  const heroContactItems = document.createElement("div");
-  heroContactItems.classList.add("hero-contact-items");
+  const heroContactItems = document.createElement('div');
+  heroContactItems.classList.add('hero-contact-items');
   hero.appendChild(heroContactItems);
 
   const contact = document.createElement('div');
@@ -24,7 +24,7 @@ const renderContact = () => {
   leftContact.appendChild(h1Contact);
 
   const loContainer1 = document.createElement('div');
-  loContainer1.classList = "lo-container"
+  loContainer1.classList = 'lo-container';
   leftContact.appendChild(loContainer1);
 
   const locTitle1 = document.createElement('h2');
@@ -36,7 +36,7 @@ const renderContact = () => {
   loContainer1.appendChild(locUpperText1);
 
   const loContainer2 = document.createElement('div');
-  loContainer2.classList = "lo-container"
+  loContainer2.classList = 'lo-container';
   leftContact.appendChild(loContainer2);
 
   const locTitle2 = document.createElement('h2');
@@ -48,7 +48,7 @@ const renderContact = () => {
   loContainer2.appendChild(locUpperText2);
 
   const loContainer3 = document.createElement('div');
-  loContainer3.classList = "lo-container"
+  loContainer3.classList = 'lo-container';
   leftContact.appendChild(loContainer3);
 
   const locTitle3 = document.createElement('h2');
@@ -59,7 +59,7 @@ const renderContact = () => {
   locUpperText3.innerHTML = '261 Hudson St<br>New York, NY 10013</a><br>EST. 2018<br>(646) 669 - 9339';
   loContainer3.appendChild(locUpperText3);
 
-//******+++ lEFT SIDE  ++++ */
+  // lEFT SIDE
 
   const formContact = document.createElement('div');
   contact.appendChild(formContact);
@@ -70,39 +70,38 @@ const renderContact = () => {
   formContact.appendChild(h2Form);
 
   const formName = document.createElement('div');
-  formName.innerHTML = `<span>Name: </span><input type="text">`;
+  formName.innerHTML = '<span>Name: </span><input type="text">';
   formContact.appendChild(formName);
   formName.classList = 'form-name';
 
   const formEmail = document.createElement('div');
-  formEmail.innerHTML = ` <span>E-mail: </span><input type="text">`;
+  formEmail.innerHTML = '<span>E-mail: </span><input type="text">';
   formContact.appendChild(formEmail);
   formEmail.classList = 'form-email';
 
   const formPhone = document.createElement('div');
-  formPhone.innerHTML = ` <span>Phone: </span><input type="text">`;
+  formPhone.innerHTML = '<span>Phone: </span><input type="text">';
   formContact.appendChild(formPhone);
   formEmail.classList = 'form-phone';
-  
+
   const formDate = document.createElement('div');
-  formDate.innerHTML = ` <span>Date: </span><input type="text">`;
+  formDate.innerHTML = '<span>Date: </span><input type="text">';
   formContact.appendChild(formDate);
   formDate.classList = 'form-date';
 
   const formParty = document.createElement('div');
-  formParty.innerHTML = ` <span>Members: </span><input type="text">`;
+  formParty.innerHTML = '<span>Members: </span><input type="text">';
   formContact.appendChild(formParty);
   formDate.classList = 'form-party';
 
   const formText = document.createElement('div');
-  formText.innerHTML = `<span>Message: </span><input type="text">`;
+  formText.innerHTML = '<span>Message: </span><input type="text">';
   formContact.appendChild(formText);
   formText.classList = 'form-text';
- 
+
   const buttonForm = document.createElement('button');
   formContact.appendChild(buttonForm);
   buttonForm.textContent = 'Make Reservation';
-
-}
+};
 
 export default (renderContact);
