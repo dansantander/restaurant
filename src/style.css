@@ -55,7 +55,7 @@
   font-family: 'Roboto', sans-serif;
   background-image: url(../src/assets/bg2.jpg);
   background-size: cover;
-  height: 100vh;
+  height: 1200px;
 }
 
 .heroitems {
@@ -67,7 +67,7 @@
 
 .items-container {
   position: absolute;
-  top: 12rem;
+  top: calc(100vh/14);
   height: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -86,7 +86,6 @@
 }
 
 .herotext.white{
-  
   color:rgb(240, 240, 240);
   font-size: calc(100vh/12);
   line-height: calc(100vh/12);
@@ -297,13 +296,36 @@
     display: none;
   }
 
-  .blackbox {
-    display: none;
+  .hero {
+    height: 800px;
   }
 
-  .beigebox {
-    display: none;
+  .heroitems {
+    position: relative;
+    width: 80%; 
+    height: 100%;
+    margin: 0 auto;
   }
+  
+  .items-container {
+    top: calc(100vh/5);
+  }
+  
+  .left-items {
+    grid-column: 1/4;
+  }
+
+  .hero-menu {
+    height: 1500px;
+  }
+  
+  .hero-menu-items {
+    position: relative;
+    width: 70%; 
+    height: 100%;
+    margin: 0 auto;
+  }
+  
 
 }
 
